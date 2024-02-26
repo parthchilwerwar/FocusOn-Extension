@@ -10,11 +10,11 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
       focusOn = false;
       chrome.storage.local.set({ 'focusOn': focusOn });
       clearFocusedTabs();
+      showAlert('Focus Time Ended!');
     }, duration);
 
     chrome.storage.local.set({ 'focusOn': focusOn });
 
-    
     blockNavigation();
   }
 });
@@ -27,9 +27,8 @@ chrome.webNavigation.onCreated.addListener(function (details) {
 
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
   if (focusOn && isTabFocused(tabId)) {
-    
     if (removeInfo.isWindowClosing || removeInfo.url === undefined) {
-      
+      // Do nothing for closing windows or undefined URLs
     } else {
       removeFocusedTab(tabId);
     }
@@ -47,7 +46,10 @@ function blockNavigation() {
     if (focusOn) {
       if (!isTabFocused(details.tabId)) {
         if (details.tabId !== undefined && details.tabId !== chrome.tabs.TAB_ID_NONE) {
-          chrome.tabs.remove(details.tabId);
+          const isRefresh = details.transitionType === 'reload';
+          if (!isRefresh) {
+            chrome.tabs.remove(details.tabId);
+          }
         }
       }
     }
@@ -71,4 +73,8 @@ function removeFocusedTab(tabId) {
 
 function clearFocusedTabs() {
   focusedTabs = [];
+}
+
+function showAlert(message) {
+  alert(message);
 }
