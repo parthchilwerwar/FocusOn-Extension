@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "FocusOn",
+    "version": "2.0",
+    "description": "Focus on one tab at a time.",
+    "permissions": ["storage" , "activeTab" , "webNavigation"],
+    "browser_action": {
+      "default_icon": "FocusOn.png",
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  }
+  

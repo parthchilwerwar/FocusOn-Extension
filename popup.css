@@ -1,0 +1,79 @@
+@font-face {
+    font-family: main;
+    src: url(Minecraft.ttf);
+}
+
+body {
+    width: 400px;
+    height: 160px;
+    padding: 70px;
+    background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+  }
+
+.img{
+  width: 20px;
+  height: 20px;
+}
+
+img{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50px;
+  cursor: default;
+
+
+}
+
+
+
+.damm{
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 30px;
+    color: black;
+    font-family: sans-serif;
+}
+  
+button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-family: main;
+  }
+
+  button:hover{
+    background-color: black;
+    color: white;
+  }
+
+#timeInput{
+    margin-top: 20px;
+    margin-left: 120px;
+    border-radius: 12px;
+    margin-left: 165px;
+    padding: 5px 20px;
+    font-family: main;
+}
+
+h6{
+    color: black;
+    font-family: sans-serif;
+    word-spacing: 4px;
+    font-size: 10px;
+
+}
+
+h6 span{
+    font-family: main;
+}
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+  }
+
