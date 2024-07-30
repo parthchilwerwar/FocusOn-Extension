@@ -1,5 +1,5 @@
-#FocusOn: Your Digital Concentration Companion <br>
-👋 Hey there! Tired of getting sucked down the rabbit hole of distracting tabs? Meet FocusOn, your new best friend for focused productivity. <br>
+<h1>FocusOn: Your Digital Concentration Companion<h1>/h1> <br>
+<h5>👋 Hey there! Tired of getting sucked down the rabbit hole of distracting tabs? Meet FocusOn, your new best friend for focused productivity . </h5> <br>
 
 <h1>What Does FocusOn Do?</h1>
 
