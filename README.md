@@ -10,7 +10,8 @@
 - Install: Grab FocusOn from my GitHub repository.
 - List Your Distractions: Tell FocusOn which sites always pull you away (you know the culprits!).
 - Set Your Focus Timer: Decide how long you want to work distraction-free.
-Get to Work! FocusOn will do the heavy lifting while you crush your tasks.
+- Get to Work! FocusOn will do the heavy lifting while you crush your tasks.
+
 <h1>Why You'll Love FocusOn</h1>
 - Improved Productivity: Watch your to-do list shrink when you're not losing focus.
 - Mindfulness: Become more aware of those moments when distraction tempts you.
