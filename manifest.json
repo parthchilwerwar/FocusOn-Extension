@@ -1,16 +1,27 @@
 {
-    "manifest_version": 2,
-    "name": "FocusOn",
-    "version": "2.0",
-    "description": "Focus on one tab at a time.",
-    "permissions": ["storage" , "activeTab" , "webNavigation"],
-    "browser_action": {
-      "default_icon": "FocusOn.png",
-      "default_popup": "popup.html"
-    },
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    }
+  "manifest_version": 3,
+  "name": "FocusOn",
+  "version": "1.0",
+  "permissions": [
+      "storage",
+      "tabs",
+      "webNavigation",
+      "scripting"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "FocusOn.png",
+          "48": "FocusOn.png",
+          "128": "FocusOn.png"
+      }
+  },
+  "icons": {
+      "16": "FocusOn.png",
+      "48": "FocusOn.png",
+      "128": "FocusOn.png"
   }
-  
+}
