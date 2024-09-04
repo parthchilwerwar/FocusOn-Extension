@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "FocusOn",
+  "version": "1.0",
+  "permissions": [
+      "storage",
+      "tabs",
+      "webNavigation",
+      "scripting",
+      "alarms"
+  ],
+  "host_permissions": [
+      "<all_urls>"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "FocusOn.png",
+          "48": "FocusOn.png",
+          "128": "FocusOn.png"
+      }
+  },
+  "icons": {
+      "16": "FocusOn.png",
+      "48": "FocusOn.png",
+      "128": "FocusOn.png"
+  }
+}
